@@ -20,7 +20,7 @@ for month in range(12):
     income = float(input())
     annual_income += income
 
-status = input("Напишите Ваше положение: одиночка, супружеская пара, родитель - одиночка ")
+status = input("Напишите Ваше положение: одиночка, супружеская пара, родитель - одиночка")
 
 d_1 = 0
 d_2 = 9075
@@ -30,14 +30,6 @@ d_5 = 186350
 d_6 = 405100
 d_7 = 406750
 d_8 = 406751
-
-d_22 = 18150
-d_23 = 73800
-d_24 = 148850
-d_25 = 226850
-d_26 = 405100
-d_27 = 457600
-d_28 = 457601
 
 if status == "одиночка":
     if 0 <= annual_income <= 9075:
@@ -55,9 +47,3 @@ if status == "одиночка":
         print(0.1 * (annual_income - d_1))
     if 406751 <= annual_income:
         print(0.1 * (annual_income - d_1))
-
-elif status == "супружеская пара":
-    if 0 <= annual_income <= d_22:
-        result = 0.1 * (annual_income - d_1)
-    elif 18151 <= annual_income <= d_23:
-        result =
