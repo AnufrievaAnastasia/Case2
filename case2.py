@@ -20,7 +20,7 @@ for month in range(12):
     income = float(input())
     annual_income += income
 
-status = input("Напишите Ваше положение: одиночка, супружеская пара, родитель - одиночка")
+status = input("Напишите Ваше положение: одиночка, супружеская пара, родитель - одиночка ")
 
 d_1 = 0
 d_2 = 9075
@@ -33,17 +33,16 @@ d_8 = 406751
 
 if status == "одиночка":
     if 0 <= annual_income <= 9075:
-        result = 0.1 * (annual_income - d_1)
-        print(result)
+        print(0.1 * (annual_income - d_1))
     if 9076 <= annual_income <= 36900:
-        print(0.1 * (annual_income - d_1))
+        print(0.1 * (d_2 - d_1) + 0.15 * (annual_income - d_2))
     if 36901 <= annual_income <= 89350:
-        print(0.1 * (annual_income - d_1))
+        print(0.1 * (d_2 - d_1) + 0.15 * (d_3 - d_2) + 0.25 * (annual_income - d_3))
     if 89351 <= annual_income <= 186350:
-        print(0.1 * (annual_income - d_1))
+        print(0.1 * (d_2 - d_1) + 0.15 * (d_3 - d_2) + 0.25 * (d_4 - d_3) + 0.28 * (annual_income - d_4))
     if 186351 <= annual_income <= 405100:
-        print(0.1 * (annual_income - d_1))
+        print(0.1 * (d_2 - d_1) + 0.15 * (d_3 - d_2) + 0.25 * (d_4 - d_3) + 0.28 * (d_5 - d_4) + 0.33 * (annual_income - d_5))
     if 405101 <= annual_income <= 406750:
-        print(0.1 * (annual_income - d_1))
+        print(0.1 * (d_2 - d_1) + 0.15 * (d_3 - d_2) + 0.25 * (d_4 - d_3) + 0.28 * (d_5 - d_4) + 0.33 * (d_6 - d_5) + 0.35 * (annual_income - d_6))
     if 406751 <= annual_income:
-        print(0.1 * (annual_income - d_1))
+        print(0.1 * (d_2 - d_1) + 0.15 * (d_3 - d_2) + 0.25 * (d_4 - d_3) + 0.28 * (d_5 - d_4) + 0.33 * (d_6 - d_5) + 0.35 * (d_7 - d_6) + 0.396 * (annual_income - d_7))
