@@ -1,6 +1,7 @@
 #  Anufrieva A.
-#
+# Zhuravleva A. (50%)
 # string constants
+
 import local as lc
 JAN = lc.TXT_JAN                     # define the values of the variables
 FEB = lc.TXT_FEB
