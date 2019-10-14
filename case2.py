@@ -96,7 +96,7 @@ elif status == lc.TXT_STATUS_3:
         print(0.1 * (d_32 - d_1) + 0.15 * (d_33 - d_32) + 0.25 * (d_34 - d_33) + 0.28 * (annual_income - d_34))
     elif 206601 <= annual_income <= 405100:
         print(0.1 * (d_32 - d_1) + 0.15 * (d_33 - d_32) + 0.25 * (d_34 - d_33) + 0.28 * (d_35 - d_34) + 0.33 *
-               (annual_income - d_35))
+              (annual_income - d_35))
     elif 405101 <= annual_income <= 432200:
         print(0.1 * (d_32 - d_1) + 0.15 * (d_33 - d_32) + 0.25 * (d_34 - d_33) + 0.28 * (d_35 - d_34) + 0.33 *
               (d_36 - d_35) + 0.35 * (annual_income - d_36))
