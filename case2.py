@@ -1,4 +1,4 @@
-#  Anufrieva A.
+#  Anufrieva A.  (66%)
 # Zhuravleva A. (50%)
 # string constants
 
