@@ -1,3 +1,5 @@
+#  Anufrieva A.
+#
 # string constants
 import local as lc
 JAN = lc.TXT_JAN                     # define the values of the variables
@@ -23,7 +25,7 @@ for month in range(12):
 
 status = input(lc.TXT_STATUS)
 
-d_1 = 0
+d_1 = 0                              # determine the value of the coefficient
 d_2 = 9075
 d_3 = 36900
 d_4 = 89350
@@ -46,7 +48,7 @@ d_36 = 405100
 d_37 = 432200
 
 
-if status == lc.TXT_STATUS_1:
+if status == lc.TXT_STATUS_1:        # calculate the tax for the first status
     if 0 <= annual_income <= 9075:
         print(0.1 * (annual_income - d_1))
     elif 9076 <= annual_income <= 36900:
@@ -65,7 +67,7 @@ if status == lc.TXT_STATUS_1:
         print(0.1 * (d_2 - d_1) + 0.15 * (d_3 - d_2) + 0.25 * (d_4 - d_3) + 0.28 * (d_5 - d_4) + 0.33 *
               (d_6 - d_5) + 0.35 * (d_7 - d_6) + 0.396 * (annual_income - d_7))
 
-elif status == lc.TXT_STATUS_2:
+elif status == lc.TXT_STATUS_2:      # calculate the tax for the second status
     if 0 <= annual_income <= 18150:
         print(0.1 * (annual_income - d_1))
     elif 18151 <= annual_income <= 73800:
@@ -85,7 +87,7 @@ elif status == lc.TXT_STATUS_2:
               ((d_26 - d_25) + 0.35 * (d_27 - d_26) + 0.396 * (annual_income - d_27)))
 
 
-elif status == lc.TXT_STATUS_3:
+elif status == lc.TXT_STATUS_3:      # calculate the tax for the third status
     if 0 <= annual_income <= 12950:
         print(0.1 * (annual_income - d_1))
     elif 12951 <= annual_income <= 49400:
